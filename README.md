@@ -1,0 +1,3 @@
+# myJavascriptProjects
+Learning Javascript
+Initialising
