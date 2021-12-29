@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Number Generator Function 1</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+      <h1>Random Int</h1>
+      <div id="demo"></div>
+	<script>
+        var fruits = ["apple","banana", "grapes", "mango"]
+        function randomInt(min, max){
+            var numOfValues = max - min + 1;
+            var randomNum = Math.random();
+            var randomVal = randomNum * numOfValues;
+            var roundedRandomVal = Math.floor(randomVal);
+            var finalNum = min+roundedRandomVal;
+            return finalNum;
+        }
+    
+        var num = randomInt(0,3);
+        console.log(num);
+        document.getElementById("demo").innerHTML = "The fruit is " + fruits[randomInt(0,3)];
+    </script>
+  </body>
+</html>
