@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test</title>
+     
+    </head>
+    <body>
+        <script>
+           
+            function selectColor(color){
+                if(color == "red" || color == "blue" || color == "yellow"){
+                    var colorArray = [];
+                    for(var i=0; i<color.length; i++){
+                        colorArray.push(color[i]);
+                    }
+                    return colorArray;
+                }
+                else{
+                    return `the color ${color} is not primary color`;
+                }
+            }
+
+            console.log(selectColor("orange"));
+        </script>
+    </body>
+</html>
