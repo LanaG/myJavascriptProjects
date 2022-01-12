@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dom Elements</title>
+     
+    </head>
+    <body>
+        <h1>DOM Elements</h1>
+        <div>
+            <p>This is the first paragraph on the page</p>
+            <p>Remothe this paragraph</p>
+        </div>
+        <script>
+            var myDiv = document.querySelector('div');
+            myDiv.removeChild(myDiv.children[1]);
+        </script>
+    </body>
+</html>
