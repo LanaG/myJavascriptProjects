@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Event Target</title>
+
+    </head>
+    <body>
+        <h1>Event Target</h1>
+        <button>Do not press me</button>
+        <script>
+            var btn = document.querySelector('button');
+
+            btn.addEventListener('click', function(event){
+                event.target.style.backgroundColor="red";
+                alert("Don't!!!");
+            })
+        </script>
+
+    </body>
+</html>
