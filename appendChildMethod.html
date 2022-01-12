@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DOM Examples</title>
+     
+    </head>
+    <body>
+        <h1>DOM Examples</h1>
+        <div>
+            <p>This is the first paragraph on the page</p>
+        </div>
+        <script>
+            var myTag = document.createElement('p');
+            var myText = document.createTextNode("Here is a new paragraph");
+            myTag.appendChild(myText);
+            var myDiv = document.querySelector('div');
+            myDiv.appendChild(myTag);
+        </script>
+    </body>
+</html>
