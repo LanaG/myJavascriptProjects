@@ -68,7 +68,34 @@
 		</footer>
 	</main>
 	<script>
-        document.getElementById('copyright').style.color = "green";
+        
+		// var allParag = document.getElementsByTagName('p');
+		// for (var eachPar of allParag){
+		// 	eachPar.style.color = "blue";
+		// }
+		
+		// var redHead = document.querySelector('h1');
+		// redHead.className = "red";
+
+		// var dateP = document.getElementById("one");
+		// dateP.className="red";
+
+		// var img = document.querySelector('#one img')
+
+		// img.setAttribute('src', 'http://meadpoint.net/images/xmasajax.jpg');
+
+		//it does not work: 
+
+		var anchors = document.getElementsByTagName('a');
+		for(var i=0; i<anchors.length; i++ ){
+			var linki = anchors[i].getAttribute('href[linki = https://en.wikipedia.org/wiki/Llama]');
+			if(linki){
+				anchors[i].innerHTML("LLamas are cool");
+			}
+		}
+		
+
+		document.getElementById('copyright').style.color = "green";
     </script>
 </body>
 </html>
