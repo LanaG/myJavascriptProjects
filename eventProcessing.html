@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS Event Processing</title>
+<!-- <script>           //add name to loacal storage
+
+    function passValues(){
+        var yourName = documet.getElementById("txt").value;
+        localStorage.setItem("textVal", yourName);
+        return false;
+    }</script> -->
+
+
+    </head>
+    <body>
+        <h1>Add Event Processing</h1>
+        <form method = "get" action="processor.html">
+        <label>Your Name: <input type="text" id="txt" name="name"></lablel>
+        <input type="submit" value="Click" onclick="passValues();">
+    </form>
+        <script>
+            var myForm = document.querySelector('form');
+            myForm.addEventListener('submit', function(event){
+                //event.preventDefault();
+                var formData = document.querySelector('input').value;
+                alert(formData);
+            })
+
+        function passValues(){
+        var yourName = document.getElementById("txt").value;
+        localStorage.setItem("textVal", yourName);
+        return false;
+        }
+
+        </script>
+
+    </body>
+</html>
