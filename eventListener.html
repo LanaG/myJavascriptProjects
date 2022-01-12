@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS Event Listener</title>
+
+    </head>
+    <body>
+        <h1>Add Event Listener</h1>
+        <button>Do not press me</button>
+        <script>
+            var btn = document.querySelector('button');
+            function ouch(){
+                alert("Oh no!!!");
+            }
+            btn.addEventListener('click', ouch);
+        </script>
+
+    </body>
+</html>
