@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS Onclick Event</title>
+
+    </head>
+    <body>
+        <h1>On Click Event Handler</h1>
+        <button>Do not press me</button>
+        <script>
+            var btn = document.querySelector('button');
+            function ouch(){
+                alert("Oh no!!!");
+            }
+            btn.onclick = ouch;//event is captured with onclick property
+        </script>
+
+    </body>
+</html>
