@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Scroll Event</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Recise the window and watch the console</h1>
+        <div></div>
+        <script>
+            window.addEventListener('resize', function(){
+                console.log(`The window width is ${window.innerWidth}`);
+                console.log(`The window heightis ${window.innerHeight}`);
+            })
+            </script>
+    </body>
+</html>
