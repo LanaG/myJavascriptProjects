@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Scroll Event</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Turn Paragraph Green</h1>
+        <p>Here is paragraph</p>
+        <button>Turn it green!</button>
+        <script>
+            var para = document.querySelector('p');
+            var btn = document.querySelector('button');
+            btn.addEventListener('click', function(){
+                para.style.color="green";
+            })
+            </script>
+    </body>
+</html>
