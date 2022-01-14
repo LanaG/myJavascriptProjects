@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Challenge</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Add a Paragraph</h1>
+
+        <div>
+        <p>This is paragraph number 1</p>
+        </div>
+      
+        <button>Add paragraph</button>
+        <button>Remove Paragraph</button>
+        <script>
+            var divTag = document.querySelector('div');
+            var btnAdd = document.querySelectorAll('button')[0];
+            var btnDelete = document.querySelectorAll('button')[1];
+            var numberOfPs = 1;
+
+            btnAdd.addEventListener('click', function(){
+                numberOfPs++;
+                var newP = document.createElement('p');
+                var pText = document.createTextNode(
+                    `this is pargraph number ${numberOfPs}`);
+                    newP.appendChild(pText);
+                    divTag.appendChild(newP);
+            });
+
+            btnDelete.addEventListener('click', function(){
+                if(numberOfPs >1){
+                    divTag.removeChild(divTag.children[numberOfPs-1]);
+                    numberOfPs--;
+                }
+                else{
+                    alert("don't delete last paraghraph!");
+                }
+            });
+            
+        
+            </script>
+    </body>
+</html>
